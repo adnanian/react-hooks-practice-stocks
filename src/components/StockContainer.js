@@ -1,11 +1,11 @@
 import React from "react";
-import Stock from "./Stock";
+//import Stock from "./Stock";
 
-function StockContainer() {
+function StockContainer( {displayStocks, stocks, stockAction} ) {
   return (
     <div>
       <h2>Stocks</h2>
-      {/* render stock list here*/}
+      {displayStocks(stocks, stockAction)}
     </div>
   );
 }
